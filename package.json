@@ -1,0 +1,65 @@
+{
+  "name": "webpack-react-ts-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "t <a>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.config.ts",
+    "build": "webpack --config webpack.prod.config.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.16",
+    "@babel/runtime": "^7.12.13",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
+    "@types/jest": "^26.0.20",
+    "@types/mini-css-extract-plugin": "^1.2.2",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "@types/webpack": "^4.41.26",
+    "@types/webpack-dev-server": "^3.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-webpack-plugin": "^2.5.1",
+    "fibers": "^5.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.1.0",
+    "html-webpack-plugin": "^5.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.3.7",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.ts"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/src/__mocks__/fileMock.ts"
+    }
+  }
+}
